@@ -1,4 +1,4 @@
-import "./style.css";
+// import "./style.css";
 import NavbarComponent from "./components/NavbarComponent";
 import HomeComponent from "./components/HomeComponent";
 import FooterComponent from "./components/FooterComponent";
@@ -90,7 +90,7 @@ function App() {
     );
   };
   return (
-    <div className="app">
+    <div className="app max-w-7xl mx-auto pt-20 px-6">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         {myContract && <NavbarComponent address={address} />}
         <Routes>
