@@ -4,6 +4,8 @@ import ScrollShowbarComponent from "./ScrollShowbarComponent";
 import { Link } from "react-router-dom";
 import dummyPic from "../assets/pg1.jpg";
 
+
+
 export default function HomeComponent(props) {
   const PRECISION = 10 ** 18;
   const [stats, setStats] = useState({
@@ -122,6 +124,7 @@ export default function HomeComponent(props) {
         </div>
       </div>
 
+
       {featuredRcmd.length !== 0 ? (
         <div className="suggestions">
           <div className="suggLeftContainer">
@@ -137,6 +140,7 @@ export default function HomeComponent(props) {
                 <Link to="/project" state={{ index: featuredRcmd[0].index }}>
                   {featuredRcmd[0].projectName}
                 </Link>
+                
               </div>
               <div className="featuredProjectDescription">
                 {featuredRcmd[0].projectDescription}
