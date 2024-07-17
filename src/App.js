@@ -1,4 +1,4 @@
-// import "./style.css";
+import "./style.css";
 import NavbarComponent from "./components/NavbarComponent";
 import HomeComponent from "./components/HomeComponent";
 import FooterComponent from "./components/FooterComponent";
